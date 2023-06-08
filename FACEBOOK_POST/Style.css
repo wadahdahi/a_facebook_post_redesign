@@ -1,0 +1,328 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-color: rgb(158, 158, 158);
+}
+/* -----------BEGIN OF THE MAIN POST SECTION------------- */
+/* ------------A "POST" CONTAINS 5 SECTIONS : ----------- */
+/* ------------Post header-Text Content-Visual Content-Reaction Numbers-Reaction Buttons----------- */
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: fit-content;
+  border-radius: 8px;
+  background-color: #fff;
+  filter: drop-shadow(0 0 4px #777);
+  margin: 120px auto 120px auto;
+}
+/* --------BEGIN OF THE POST HEADER SECTION-------- */
+/* --------POST HEADER PART CONTAINS 3 SECTIONS : ------ */
+/* --------USER PROFILE IMAGE - USER NAME AND POST TIME - POST CONTROL ---------------------------- */
+.pstHed {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* -------------------( 1 )------------------------ */
+.usrPrflImg {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  /* background-color: #ddd; */
+}
+.usrPrflImgSlf {
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  margin: auto;
+}
+/* -------------------( 2 )------------------------ */
+.usr_and_tim {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 70px;
+  align-self: center;
+}
+.timDtls {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  /* width: 100px; */
+}
+.timRlsAgo {
+  font-size: 0.8em;
+  color: #666;
+}
+.onlyTxtPriod {
+  position: relative;
+  left: 5px;
+}
+.priodSlf {
+  font-size: 0.8em;
+  color: #666;
+  text-align: center;
+}
+.glblIcn {
+  fill: #777;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  align-self: center;
+  margin-left: 10px;
+}
+.usrNmeSlf {
+  color: rgb(29, 29, 29);
+  font-size: 1em;
+  text-decoration: none;
+}
+/* ----SOME HOVERS HERE---- */
+.usrNmeSlf:hover {
+  text-decoration: underline;
+}
+/* -------------------( 3 )------------------------ */
+.pstCtrl {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 0%;
+  justify-self: end;
+}
+.pstMnu {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.thriDtsBtnSlf {
+  fill: #777;
+  scale: 1.2;
+}
+.pstClos {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.closBtnSlf {
+  fill: #777;
+  scale: 1.2;
+}
+/* ----SOME HOVERS HERE---- */
+.pstMnu:hover {
+  background-color: #ddd;
+}
+.pstClos:hover {
+  background-color: #ddd;
+}
+/* ------------------------------------------------END OF THE POST HEADER PART---------- */
+/* ------------------------------------------------------------------------------------- */
+/* --------BEGIN OF THE TEXT CONTENT PART----------------------------------------------- */
+/* --------A "TEXT CONTENT" PART CONTAINS 1 SECTION : ---------------------------------- */
+/* --------     - TEXT CONTENT    ------------------------------------------------------ */
+.txtCntnt {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+.txtCntntSlf {
+}
+/* ------------------------------------------------END OF THE TEXT CONTENT PART--------- */
+/* --------BEGIN OF THE VISUAL CONTENT PART--------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* --------A "VISUAL CONTENT" PART CONTAINS 1 SECTION : -------------------------------- */
+/* --------     - VISUAL CONTENT    ---------------------------------------------------- */
+.vsulCntnt {
+  width: 500px;
+}
+.pstImgCntr {
+  width: 500px;
+}
+.pstImgSlf {
+  width: 500px;
+}
+/* ------------------------------------------------END OF THE VISUAL CONTENT PART------- */
+/* --------BEGIN OF THE REACTIONS PART-------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* --------A "REACTIONS" PART CONTAINS 1 SECTION : ------------------------------------- */
+/* -------- - LOVE REACTION - CARE REACTION - LIKE REACTION  --------------------------- */
+.ractCntnr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ----------------And Is Contains Two Sides : LEFT - RIGHT-------- */
+/* ----------------The Left One------------------------------------ */
+.leftSidCounters {
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
+}
+/* ---------------------------------------------------------------- */
+.ractsIcns {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #f1f1f1; */
+  max-width: 75px;
+  height: 40px;
+}
+
+.ractIcnSlf {
+  scale: 0.6;
+  border: 5px;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #fff;
+}
+#ractLove {
+  position: relative;
+  z-index: 1200;
+}
+#ractCare {
+  position: relative;
+  left: -22px;
+  z-index: 1199;
+}
+#ractLike {
+  position: relative;
+  left: -45px;
+  z-index: 1198;
+}
+/* ------------Reacts Counter------------ */
+.ractsCountCntnr {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.ractsCountCntnr p {
+  font-size: 0.95em;
+  color: #666;
+  align-items: center;
+}
+/* ----------------The Rught One----------------------------------- */
+.rightSidCounters {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15px;
+  width: fit-content;
+  position: absolute;
+  right: 0px;
+  /* background-color: #f1f1f1; */
+}
+/* ------------------------------------- */
+.icnCountersSlf {
+  width: 16px;
+  height: 16px;
+  fill: #ccc;
+  margin-left: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#comntsCount{
+    margin-left: 10px;
+}
+#shrsCount{
+    margin-left: 10px;
+}
+/* ------------------------------------------------END OF THE REACTIONS PART------------ */
+/* --------BEGIN OF THE REACTION BUTTONS PART------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* --------A "REACTION BUTTONS" PART CONTAINS 1 SECTION : ------------------------------ */
+/* --------   - LIKE - COMMENT - SHARE   ----------------------------------------------- */
+hr {
+  width: 470px;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  align-self: center;
+  color: #ddd;
+}
+.ractSBtns {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.ractsBtnICnt {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #777; */
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #666;
+}
+.ractBtn {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.icnBtnSlf {
+  width: 19px;
+  height: 19px;
+  fill: #ccc;
+  margin-right: 8px;
+}
+/* ----SOME HOVERS AND ANIMATIONS HERE---- */
+.ractBtn:hover {
+  cursor: pointer;
+  animation-name: ractBtnHvr;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes ractBtnHvr {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #f1f1f1;
+  }
+  100% {
+    background-color: #f0f0f0;
+  }
+}
+.ractBtn:active {
+  cursor: pointer;
+  animation-name: ractBtnActv;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes ractBtnActv {
+  0% {
+    background-color: #f0f0f0;
+  }
+  50% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #ddd;
+  }
+}
